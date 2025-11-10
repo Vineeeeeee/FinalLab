@@ -95,3 +95,4 @@ d:\Model\HRDepartment\obj\Debug\net9.0\HRDepartment.pdb
 d:\Model\HRDepartment\obj\Debug\net9.0\HRDepartment.genruntimeconfig.cache
 d:\Model\HRDepartment\obj\Debug\net9.0\ref\HRDepartment.dll
 d:\Model\HRDepartment\bin\Debug\net9.0\App_Data\staffs.json
+D:\Model\HRDepartment\obj\Debug\net9.0\HRDepartment.sourcelink.json

@@ -7,5 +7,32 @@
     "Phone": "0989294338",
     "StartingDate": "2025-11-13T00:00:00",
     "PhotoPath": "/uploads/d81588e8-b186-4d98-8133-9167edaebb1d.gif"
+  },
+  {
+    "Id": 2,
+    "StaffId": "EMP0012",
+    "Name": "D\u1ED7 TRO VI",
+    "Email": "dotrivi@gmail.com",
+    "Phone": "0989294338",
+    "StartingDate": "2025-11-20T00:00:00",
+    "PhotoPath": null
+  },
+  {
+    "Id": 3,
+    "StaffId": "EMP0013",
+    "Name": "D\u1ED7 TRO VI",
+    "Email": "dotrivi@gmail.com",
+    "Phone": "0989294338",
+    "StartingDate": "2025-11-12T00:00:00",
+    "PhotoPath": "/uploads/760472b5-b170-4251-bae5-79b828ad036d.png"
+  },
+  {
+    "Id": 4,
+    "StaffId": "EMP0014",
+    "Name": "Chokevy",
+    "Email": "nocupfr@gmail.com",
+    "Phone": "0944488884",
+    "StartingDate": "2016-02-10T00:00:00",
+    "PhotoPath": "/uploads/015e2167-8c5f-4993-a3fa-794bedb97f37.jpg"
   }
 ]
