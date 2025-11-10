@@ -8,19 +8,24 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\dotri\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Model\\HRDepartment\\HRDepartment.csproj",
+      "projectUniqueName": "C:\\dotnet\\FinalLab\\FinalLab\\HRDepartment.csproj",
       "projectName": "HRDepartment",
-      "projectPath": "D:\\Model\\HRDepartment\\HRDepartment.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Model\\HRDepartment\\obj\\",
+      "projectPath": "C:\\dotnet\\FinalLab\\FinalLab\\HRDepartment.csproj",
+      "packagesPath": "C:\\Users\\dotri\\.nuget\\packages\\",
+      "outputPath": "C:\\dotnet\\FinalLab\\FinalLab\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dotri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

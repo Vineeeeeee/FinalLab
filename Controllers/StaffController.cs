@@ -14,10 +14,17 @@ namespace HRDepartment.Controllers
         private readonly StaffRepository _repo;
         private readonly IWebHostEnvironment _env;
 
+        // Constructor production
         public StaffController(IWebHostEnvironment env)
         {
             _env = env;
             _repo = new StaffRepository(env.ContentRootPath);
+        }
+
+        // Constructor dùng cho unit test
+        public StaffController(StaffRepository repo)
+        {
+            _repo = repo;
         }
 
         public IActionResult Index()
@@ -44,14 +51,13 @@ namespace HRDepartment.Controllers
         {
             if (!ModelState.IsValid) return View(staff);
 
-            // Prevent duplicate StaffId
             if (!string.IsNullOrWhiteSpace(staff.StaffId) && _repo.ExistsByStaffId(staff.StaffId))
             {
                 ModelState.AddModelError(nameof(staff.StaffId), "Staff ID already exists.");
                 return View(staff);
             }
 
-            if (Photo != null && Photo.Length > 0)
+            if (Photo != null && Photo.Length > 0 && _env != null)
             {
                 var uploads = Path.Combine(_env.WebRootPath, "uploads");
                 if (!Directory.Exists(uploads)) Directory.CreateDirectory(uploads);

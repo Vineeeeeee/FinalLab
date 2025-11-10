@@ -9,9 +9,13 @@ namespace HRDepartment.Data
 {
     public class StaffRepository
     {
+        public StaffRepository()
+        {
+            _items = new List<Staff>();
+        }
         private readonly string _filePath;
         private readonly object _lock = new object();
-        private List<Staff> _items;
+        private List<Staff> _items; // không cần virtual
 
         public StaffRepository(string contentRoot)
         {
@@ -46,7 +50,8 @@ namespace HRDepartment.Data
             }
         }
 
-        public IEnumerable<Staff> GetAll()
+        // mark virtual để Mock override
+        public virtual IEnumerable<Staff> GetAll()
         {
             lock (_lock)
             {
@@ -54,7 +59,7 @@ namespace HRDepartment.Data
             }
         }
 
-        public Staff? GetById(int id)
+        public virtual Staff? GetById(int id)
         {
             lock (_lock)
             {
@@ -62,7 +67,7 @@ namespace HRDepartment.Data
             }
         }
 
-        public bool ExistsByStaffId(string staffId)
+        public virtual bool ExistsByStaffId(string staffId)
         {
             if (string.IsNullOrWhiteSpace(staffId)) return false;
             lock (_lock)
@@ -71,7 +76,7 @@ namespace HRDepartment.Data
             }
         }
 
-        public void Add(Staff s)
+        public virtual void Add(Staff s)
         {
             lock (_lock)
             {
@@ -80,5 +85,6 @@ namespace HRDepartment.Data
                 Save();
             }
         }
+        
     }
 }
